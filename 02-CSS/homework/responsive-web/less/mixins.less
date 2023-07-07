@@ -1,0 +1,33 @@
+// Mixins acá
+
+@var5px: 5px;
+
+.stilosButton(@color;@borde;@colorText){
+
+    background-color: @color;
+    border:@borde solid black;
+    color:@colorText;
+    border-radius: @var5px;
+}
+
+
+
+.btn button{
+
+    .stilosButton(black, 1px,#fff)
+}
+
+.hoverApparience(@background,@colorte){
+
+    background-color: @background;
+
+        color:@colorte;
+}
+
+.btn button:hover{
+
+    .hoverApparience(gray,black)
+
+}
+
+
